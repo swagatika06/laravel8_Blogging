@@ -2,42 +2,42 @@
 
 ## prerequisites:
 
-php:8
+    php:8
 
-mysyl
+    mysyl
 
-laravel:8
+    laravel:8
 
 ## Set up :
 
-Clone the repo and cd into it
+1. Clone the repo and cd into it
     git clone https://github.com/swagatika06/laravel8_blogging.git
     
-Rename or copy .env.example file to .env
+2. Rename or copy .env.example file to .env
 
-create database laravel8_blog
+3. create database laravel8_blog
 
-In your terminal composer install
+4. In your terminal composer install
 
-php artisan key:generate
+5. php artisan key:generate
 
-Set your database credentials in your .env file
+6. Set your database credentials in your .env file
 
-php artisan migrate
+7. php artisan migrate
 
-php artisan storage:link//to view uploade image @local setup
+8. php artisan storage:link//to view uploade image @local setup
 
-php artisan db:seed(optional)//to populate fake data in db
+9. php artisan db:seed(optional)//to populate fake data in db
 
 or
 
-php artisan db:seed --class=PostsTableSeeder
+9. php artisan db:seed --class=PostsTableSeeder
 
-php artisan db:seed --class=CategoriesTableSeeder
+10. php artisan db:seed --class=CategoriesTableSeeder
 
-php artisan db:seed --class=TagsTableSeeder
+11. php artisan db:seed --class=TagsTableSeeder
 
-php artisan serve
+12. php artisan serve
 
 ### Landing Page:
 

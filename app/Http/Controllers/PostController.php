@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use Illuminate\Http\Request;
+use Illuminate\Http\JsonResponse;
 
 class PostController extends Controller
 {
@@ -12,12 +13,18 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         $posts = Post::with('category', 'tags')->latest()->paginate(10);
 
-        return view('posts.index', compact('posts'));
+        if ($request->expectsJson()) {
+            
+            return response()->json($posts, 200);
+        } else {
+            return view('posts.index', compact('posts'));
+        }
     }
+
 
     /**
      * Display the specified resource.
@@ -25,10 +32,14 @@ class PostController extends Controller
      * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($id, Request $request)
     {
         $post = Post::with('category', 'tags')->findOrFail($id);
 
-        return view('posts.show', compact('post'));
+        if ($request->expectsJson()) {
+            return response()->json($post, 200);
+        } else {
+            return view('posts.show', compact('post'));
+        }
     }
 }
