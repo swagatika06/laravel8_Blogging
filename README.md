@@ -27,4 +27,5 @@ php artisan db:seed --class=TagsTableSeeder
 
 php artisan serve
 
-![image](https://user-images.githubusercontent.com/73284415/232738152-6041d368-d371-4d4e-977b-2f3ecfbf39a4.png)
+![image](https://user-images.githubusercontent.com/73284415/232738613-a66bc621-5c45-45b4-a91d-04b1a7610246.png)
+
