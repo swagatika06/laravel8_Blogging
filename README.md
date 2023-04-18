@@ -1,11 +1,15 @@
 # laravel8_blogging
 
 prerequisites:
+
 php:8
+
 mysyl
+
 laravel:8
 
 Set up :
+
 Clone the repo and cd into it
     git clone https://github.com/swagatika06/laravel8_blogging.git
     
@@ -26,6 +30,7 @@ php artisan storage:link//to view uploade image @local setup
 php artisan db:seed(optional)//to populate fake data in db
 
 or
+
 php artisan db:seed --class=PostsTableSeeder
 
 php artisan db:seed --class=CategoriesTableSeeder
@@ -34,7 +39,20 @@ php artisan db:seed --class=TagsTableSeeder
 
 php artisan serve
 
-Landing Page
+Landing Page:
+
+![image](https://user-images.githubusercontent.com/73284415/232777988-6343a609-cc66-4830-851c-08aaea9a65c1.png)
+
+Registration Page:
+
+![image](https://user-images.githubusercontent.com/73284415/232778269-41ac4826-58ec-4bed-af00-a5add8f7021c.png)
+
+Login Page:
+
+![image](https://user-images.githubusercontent.com/73284415/232778396-79f555f8-7966-483a-8406-1c60ca83c573.png)
+
+
+User Dshboard Page:
 
 ![image](https://user-images.githubusercontent.com/73284415/232738613-a66bc621-5c45-45b4-a91d-04b1a7610246.png)
 
