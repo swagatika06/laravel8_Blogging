@@ -73,12 +73,12 @@ or
 ![image](https://user-images.githubusercontent.com/73284415/232775262-6debd863-7ed1-4ef5-98d5-562a5a402245.png)
 
 ### Postman Snippet:
-**1. Get All Posts: **
+** 1. Get All Posts: **
 
 ![image](https://user-images.githubusercontent.com/73284415/232776588-9bfda3e3-1ab5-4e7c-98e1-20af79db3215.png)
 
 
-**2. Get Post by Slug Id **
+** 2. Get Post by Slug Id **
 ![image](https://user-images.githubusercontent.com/73284415/232776793-ca85e100-c57c-480a-9b6e-e685d1bf93e0.png)
 
 
