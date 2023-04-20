@@ -8,7 +8,7 @@
                 <strong class="card-header">{{ __('Edit Post') }}</strong>
 
                 <div class="card-body">
-                    <form action="{{ route('admin.posts.update', $post) }}" method="POST">
+                    <form action="{{ route('admin.posts.update', $post) }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
 
